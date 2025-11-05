@@ -1,4 +1,4 @@
-# Allah Rakha's Personal Portfolio
+# Personal Portfolio
 
 This is the official repository for my personal portfolio, built from scratch to showcase my skills, projects, and work experience as a Full-Stack Developer. The site is fully responsive, interactive, and designed with a modern, eye-catching UI.
 
