@@ -7,7 +7,7 @@ const projects = [
     img: "/lms.jpg",
     title: "LMS - SaaS App",
     description:
-      "Nihongotalkers App connects learners with expert Japanese teachers across various fields. Browse diverse instructors, each with their own hourly rates, and find the perfect match for your goals and budget.",
+      "A cutting-edge, AI-powered Learning Management System (LMS) built as a SaaS platform. It features secure authentication with Clerk, a modern frontend with Next.js, and a robust Supabase backend. The core feature is an interactive, voice-based AI tutor (powered by Vapi-ai) that provides a personalized and engaging learning experience.",
     technologies: ["Next.js", "TailwindCSS", "Supabase", "Vapi-ai", "Clerk"],
     links: {
       site: "https://personal-learning-saas-app.vercel.app/",
@@ -19,7 +19,7 @@ const projects = [
     img: "/eCom.jpg",
     title: "Multivendor E-Commerce App",
     description:
-    "Nihongotalkers App connects learners with expert Japanese teachers across various fields. Browse diverse instructors, each with their own hourly rates, and find the perfect match for your goals and budget.",
+    "A feature-rich, full-stack multivendor e-commerce marketplace, similar to Etsy or Amazon. Built with the MERN stack (React, Node.js, Express, MongoDB), this platform allows individual sellers to create storefronts, manage inventory, and process sales securely using the integrated Stripe payment gateway.",
     technologies: ["React", "Node.js", "Express.js", "MongoDB", "Stripe"],
     links: {
       site: "https://www.mutltivendor.site/",
@@ -31,7 +31,7 @@ const projects = [
     img: "/realestate.jpg",
     title: "Real Estate App",
     description:
-      "Nihongotalkers App connects learners with expert Japanese teachers across various fields. Browse diverse instructors, each with their own hourly rates, and find the perfect match for your goals and budget.",
+      "A dynamic, full-stack real estate platform for browsing and managing property listings. This MERN stack application features advanced search and filtering, user accounts for saving favorite properties, and an agent dashboard. Includes Stripe integration for handling secure property bookings or application fees.",
     technologies: ["React", "Node.js", "Express.js", "MongoDB", "Stripe"],
     links: {
       site: "https://real-estate-project-nine-theta.vercel.app/",
