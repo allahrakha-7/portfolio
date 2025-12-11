@@ -5,14 +5,13 @@ import {
   AiOutlineLinkedin,
 } from "react-icons/ai";
 import { motion } from "framer-motion";
-import PdfResume from '../../public/Allah Rakha_Resume.pdf'
+import PdfResume from '../../public/Allah Rakha_Full Stack Developer_Resume.pdf'
 
-// --- Main Hero Component (Re-skinned) ---
 const Hero = () => {
   function downloadResumeAsPDF() {
     const link = document.createElement("a");
     link.href = PdfResume;
-    link.download = "AllahRakha_Resume.pdf";
+    link.download = "Allah Rakha_Full Stack Developer_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -122,7 +121,7 @@ const Hero = () => {
                 <div className="relative w-72 h-72 rounded-full flex items-center justify-center overflow-hidden bg-[#003459]/20 shadow-lg border border-[#003459]">
                   <div className="absolute inset-0 bg-[#00a8e8]/20 rounded-full blur-3xl opacity-70 animate-pulse-slow" style={{ animationDuration: '6s' }} />
                   <img
-                    src="/mypic.png"
+                    src="/my_pic.jpg"
                     alt="Allah Rakha"
                     className="relative z-10 w-full h-full object-cover rounded-full"
                   />
@@ -193,7 +192,7 @@ const Hero = () => {
             <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full flex items-center justify-center overflow-hidden bg-[#003459]/20 shadow-lg border border-[#003459]">
               <div className="absolute inset-0 bg-[#00a8e8]/20 rounded-full blur-3xl opacity-70 animate-pulse-slow" style={{ animationDuration: '6s' }} />
               <img
-                src="/mypic.png" 
+                src="/my_pic.jpg" 
                 alt="Allah Rakha"
                 className="relative z-10 w-full h-full object-cover rounded-full"
               />

@@ -175,9 +175,9 @@ const Contact = () => {
               >
                 <div className="grid grid-cols-3 gap-4">
                   {[
-                    { number: "5+", label: "Projects" },
+                    { number: "7+", label: "Projects" },
                     { number: "2+", label: "Years Exp." },
-                    { number: "15+", label: "Happy Clients" },
+                    { number: "10+", label: "Happy Clients" },
                   ].map((stat) => (
                     <div key={stat.label}>
                       <div className="text-lg max-sm:text-lg lg:text-3xl font-bold bg-gradient-to-r from-[#00a8e8] to-[#007ea7] bg-clip-text text-transparent mb-1">
