@@ -22,10 +22,10 @@ export default function Resume() {
               <div className="flex items-center gap-2">
                 <FaEnvelope className="h-4 w-4" />
                 <a
-                  href="mailto:armozi07911000@gmail.com"
+                  href="mailto:allahrakhasajjaad@gmail.com"
                   className="text-sm text-blue-600 hover:underline"
                 >
-                  armozi07911000@gmail.com
+                  allahrakhasajjaad@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2">

@@ -1,14 +1,18 @@
-import { useState } from "react"; 
+import { useState } from "react";
 import {
+  DiHtml5,
+  DiCss3,
   DiJavascript1,
   DiReact,
   DiNodejsSmall,
   DiMongodb,
   DiGithubBadge,
+  DiSass,
 } from "react-icons/di";
 import {
   BiLogoPostgresql,
   BiLogoTailwindCss,
+  BiLogoBootstrap,
 } from "react-icons/bi";
 import {
   SiTypescript,
@@ -19,16 +23,20 @@ import {
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { TbBrandReactNative } from "react-icons/tb";
-import { motion, AnimatePresence } from "framer-motion"; 
+import { motion, AnimatePresence } from "framer-motion";
 
 const skillCategories = {
   Frontend: [
+    { name: "HTML", icon: <DiHtml5 className="text-orange-600" /> },
+    { name: "CSS", icon: <DiCss3 className="text-blue-600" /> },
     { name: "JavaScript", icon: <DiJavascript1 className="text-yellow-500" /> },
     { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
     { name: "React", icon: <DiReact className="text-blue-400" /> },
     { name: "Next.js", icon: <RiNextjsFill className="text-white" /> },
     { name: "React-Native", icon: <TbBrandReactNative className="text-white" /> },
     { name: "Tailwind CSS", icon: <BiLogoTailwindCss className="text-cyan-400" /> },
+    { name: "Bootstrap", icon: <BiLogoBootstrap className="text-purple-600" /> },
+    { name: "Sass", icon: <DiSass className="text-pink-500" /> },
   ],
   Backend: [
     { name: "Node.js", icon: <DiNodejsSmall className="text-green-500" /> },
@@ -113,9 +121,7 @@ const Skills = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg lg:text-xl text-[#cccccc] max-w-3xl mx-auto leading-relaxed px-4"
             >
-              Proficient in modern web technologies with hands-on experience in
-              full-stack development, cloud infrastructure, and scalable
-              application architecture.
+              Proficient in MERN stack technologies and modern web development, with hands-on experience in building scalable REST APIs, responsive user interfaces, and cloud-hosted application architecture.
             </motion.p>
           </div>
         </div>
@@ -134,11 +140,10 @@ const Skills = () => {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-4 py-2 md:px-6 md:py-3 font-semibold rounded-full transition-all duration-300 ${
-                  activeCategory === category
-                    ? "bg-[#00a8e8] text-[#00171f]" // Active
-                    : "bg-[#003459] text-[#cccccc] hover:bg-[#007ea7]" // Inactive
-                }`}
+                className={`px-4 py-2 md:px-6 md:py-3 font-semibold rounded-full transition-all duration-300 ${activeCategory === category
+                  ? "bg-[#00a8e8] text-[#00171f]" // Active
+                  : "bg-[#003459] text-[#cccccc] hover:bg-[#007ea7]" // Inactive
+                  }`}
               >
                 {category}
               </button>
@@ -191,9 +196,9 @@ const Skills = () => {
             className="mt-12 lg:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
           >
             {[
-              { number: "1.5+", label: "Years Experience" },
-              { number: "5+", label: "Projects Completed" },
-              { number: "12+", label: "Technologies" },
+              { number: "1+", label: "Years Experience" },
+              { number: "10+", label: "Projects Completed" },
+              { number: "15+", label: "Technologies" },
               { number: "100%", label: "Client Satisfaction" },
             ].map((stat, index) => (
               <div key={stat.label} className="text-center">

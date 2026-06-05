@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { FiSun, FiMoon } from "react-icons/fi";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
-const Navbar = () => {
+const Navbar = ({ theme, toggleTheme }) => {
   const [nav, setNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -48,14 +50,13 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[#00171f]/80 backdrop-blur-lg shadow-lg border-b border-[#003459]"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled
+        ? "bg-[#00171f]/80 backdrop-blur-lg shadow-lg border-b border-[#003459]"
+        : "bg-transparent"
+        }`}
     >
       <div className="w-full max-w-7xl mx-auto flex justify-between items-center px-6 lg:px-12 h-20">
-        
+
         {/* Logo - z-50 keeps it above the menu */}
         <motion.div whileHover={{ scale: 1.05 }} className="relative z-50 ">
           <Link
@@ -66,7 +67,7 @@ const Navbar = () => {
             className="text-3xl font-bold text-[#00a8e8] cursor-pointer"
             onClick={closeNav}
           >
-            AllahRakha
+            AR.
           </Link>
         </motion.div>
 
@@ -93,8 +94,18 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* CTA Button */}
-        <div className="hidden md:block">
+        {/* Desktop Actions */}
+        <div className="hidden md:flex items-center gap-6">
+          <motion.button
+            onClick={toggleTheme}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="p-2.5 rounded-full border border-[#003459] text-[#00a8e8] hover:bg-[#003459]/30 transition-all duration-300 flex items-center justify-center cursor-pointer"
+            aria-label="Toggle Theme"
+          >
+            {theme === "dark" ? <FiSun size={20} /> : <FiMoon size={20} />}
+          </motion.button>
+
           <Link to="contact" smooth={true} offset={-80} duration={500}>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -106,15 +117,26 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Button - z-50 */}
-        <motion.button
-          whileTap={{ scale: 0.9 }}
-          onClick={toggleNav}
-          className="md:hidden z-50 text-[#ffffff] p-2"
-        >
-          {/* 1. FIXED: Show close (X) only when nav is open */}
-          {nav ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
-        </motion.button>
+        {/* Mobile Actions */}
+        <div className="flex items-center gap-4 md:hidden z-50">
+          <motion.button
+            onClick={toggleTheme}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="p-2 rounded-full border border-[#003459] text-[#00a8e8] hover:bg-[#003459]/30 transition-all duration-300 flex items-center justify-center cursor-pointer"
+            aria-label="Toggle Theme"
+          >
+            {theme === "dark" ? <FiSun size={18} /> : <FiMoon size={18} />}
+          </motion.button>
+
+          <motion.button
+            whileTap={{ scale: 0.9 }}
+            onClick={toggleNav}
+            className="text-[#ffffff] p-2 flex items-center justify-center"
+          >
+            {nav ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
+          </motion.button>
+        </div>
 
         {/* Mobile Menu */}
         <motion.div
@@ -132,7 +154,7 @@ const Navbar = () => {
                 {navItems.map((item, index) => (
                   <motion.li
                     key={item.name}
-                    initial={{ opacity: 0, x: 50 }} 
+                    initial={{ opacity: 0, x: 50 }}
                     animate={nav ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
                     transition={{ delay: index * 0.1 }}
                   >
@@ -175,6 +197,11 @@ const Navbar = () => {
       </div>
     </motion.nav>
   );
+};
+
+Navbar.propTypes = {
+  theme: PropTypes.string.isRequired,
+  toggleTheme: PropTypes.func.isRequired,
 };
 
 export default Navbar;

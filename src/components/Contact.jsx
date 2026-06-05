@@ -1,7 +1,7 @@
-import { useState } from "react"; 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { BiCurrentLocation } from "react-icons/bi";
-import { FaWhatsapp } from "react-icons/fa"; 
+import { FaWhatsapp } from "react-icons/fa";
 import {
   AiOutlineGithub,
   AiOutlineLinkedin,
@@ -59,7 +59,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-12 lg:py-20 bg-[#00171f]">
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
-        
+
         {/* --- Title Section --- */}
         <div className="text-center mb-12 lg:mb-20">
           <motion.div
@@ -96,13 +96,12 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg lg:text-xl text-[#cccccc] max-w-3xl mx-auto leading-relaxed px-4"
           >
-            Ready to bring your ideas to life? Let&apos;s discuss your next
-            project and create something amazing together.
+            Have a project in mind or looking for a dedicated Full Stack Developer to join your team? Let&apos;s discuss how we can build high-quality software together.
           </motion.p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
-          
+
           <motion.div
             className="space-y-8"
             variants={sectionVariants}
@@ -118,7 +117,7 @@ const Contact = () => {
                 About Me
               </h3>
               <p className="text-[#cccccc] leading-relaxed mb-6">
-                I am a skilled software developer with experience in building
+                I am a skilled software engineer with experience in building
                 scalable web applications using React, Next.js, Express.js and
                 Node.js. I specialize in creating user-friendly
                 interfaces and robust backend systems, with a strong focus on
@@ -147,7 +146,7 @@ const Contact = () => {
                   <div>
                     <p className="text-[#999999] text-sm">Email</p>
                     <p className="text-[#ffffff] font-medium">
-                      armozi07911000@gmail.com
+                      allahrakhasajjaad@gmail.com
                     </p>
                   </div>
                 </div>
@@ -175,8 +174,8 @@ const Contact = () => {
               >
                 <div className="grid grid-cols-3 gap-4">
                   {[
-                    { number: "7+", label: "Projects" },
-                    { number: "2+", label: "Years Exp." },
+                    { number: "10+", label: "Projects" },
+                    { number: "1+", label: "Year Exp." },
                     { number: "10+", label: "Happy Clients" },
                   ].map((stat) => (
                     <div key={stat.label}>
@@ -188,7 +187,7 @@ const Contact = () => {
                   ))}
                 </div>
               </motion.div>
-              
+
               {/* Socials */}
               <motion.div
                 variants={itemVariants}
@@ -206,7 +205,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1, y: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-12 h-12 max-sm:w-7 max-sm:h-7 bg-[#00171f]/50 hover:bg-[#00a8e8]/10 rounded-full flex items-center justify-evenly text-[#999999] hover:text-white transition-all duration-300 border border-[#00171f]"
+                    className="w-12 h-12 max-sm:w-7 max-sm:h-7 bg-[#00171f] rounded-full flex items-center justify-evenly text-[#999999] hover:text-white transition-all duration-300 border border-[#00171f]"
                     aria-label={label}
                   >
                     <Icon size={20} />

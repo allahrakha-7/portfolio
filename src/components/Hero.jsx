@@ -26,7 +26,7 @@ const Hero = () => {
       {/* === Animated Background === */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#00171f] via-[#00a8e8]/10 to-[#00171f]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,168,232,0.1),transparent_50%)]"></div>
-        <div 
+        <div
           className="absolute inset-0 bg-[size:60px_60px]"
           style={{
             backgroundImage: 'linear-gradient(to right, rgba(0, 52, 89, 0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 52, 89, 0.15) 1px, transparent 1px)'
@@ -53,14 +53,14 @@ const Hero = () => {
       <div className="container mx-auto relative z-10 w-full">
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16 pb-24 lg:pb-0">
-          
+
           <div className="flex-1 max-w-2xl">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               // FIXED: Adjusted spacing for new padding
-              className="space-y-8" 
+              className="space-y-8"
             >
               {/* Greeting */}
               <motion.div
@@ -98,10 +98,9 @@ const Hero = () => {
                 >
                   <TypeAnimation
                     sequence={[
-                      "Full-Stack Developer", 2000,
-                      "React Specialist", 2000,
-                      "Node.js Expert", 2000,
-                      "Tech Consultant", 2000,
+                      "Full Stack Engineer", 2000,
+                      "MERN Stack Specialist", 2000,
+                      "React & Next.js Developer", 2000,
                     ]}
                     wrapper="span"
                     speed={50}
@@ -123,7 +122,7 @@ const Hero = () => {
                   <img
                     src="/my_pic.jpg"
                     alt="Allah Rakha"
-                    className="relative z-10 w-full h-full object-cover rounded-full"
+                    className="relative z-10 w-full h-full object-cover object-top rounded-full"
                   />
                 </div>
               </motion.div>
@@ -134,9 +133,7 @@ const Hero = () => {
                 transition={{ delay: 0.8, duration: 0.8 }}
                 className="text-xl text-[#cccccc] leading-relaxed max-w-xl text-center lg:text-left"
               >
-                Passionate full-stack developer with 2+ years of experience
-                crafting exceptional digital experiences. I specialize in React,
-                Node.js, and modern web technologies to bring ideas to life.
+                As an experienced Full Stack Engineer and MERN Stack Specialist, I design and build high performance and scalable web applications.
               </motion.p>
 
               <motion.div
@@ -189,12 +186,12 @@ const Hero = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="flex-1 max-w-lg w-full relative justify-center items-center hidden lg:flex"
           >
-            <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full flex items-center justify-center overflow-hidden bg-[#003459]/20 shadow-lg border border-[#003459]">
+            <div className="relative w-72 h-76 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full flex items-center justify-center overflow-hidden bg-[#003459]/20 shadow-lg border border-[#003459]">
               <div className="absolute inset-0 bg-[#00a8e8]/20 rounded-full blur-3xl opacity-70 animate-pulse-slow" style={{ animationDuration: '6s' }} />
               <img
-                src="/my_pic.jpg" 
+                src="/my_pic.jpeg"
                 alt="Allah Rakha"
-                className="relative z-10 w-full h-full object-cover rounded-full"
+                className="relative z-10 w-full h-full object-cover object-top rounded-full"
               />
             </div>
           </motion.div>

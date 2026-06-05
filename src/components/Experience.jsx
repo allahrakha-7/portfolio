@@ -3,43 +3,43 @@ import { BiCalendar, BiBriefcase } from "react-icons/bi";
 
 const experiences = [
   {
-    company: "Ruwwaad Technologies",
-    role: "Full-Stack Developer",
-    period: "Oct 2025 - Present",
+    company: "Wolves Tech Solutions",
+    role: "Full Stack Developer",
+    period: "December 2025 - Present",
     type: "Full-time",
     description:
       "Leading full-stack development initiatives, building and maintaining scalable web applications using React and Next.js. Collaborating with cross-functional teams to enhance application performance and ensure seamless user experiences.",
-    technologies: ["React", "Next.js", "Node.js", "Express.js", "MongoDB"],
+    technologies: ["React", "Next.js", "React Native", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "PostgreSQL"],
     current: true,
   },
   {
     company: "Dev Weekends",
     role: "MERN Stack Developer",
-    period: "Jan 2024 - Jun 2025",
+    period: "Jun 2024 - Sep 2025",
     type: "Full-time",
     description:
       "Developed dynamic and robust web applications leveraging React, Next.js, Node.js, and Express. Implemented AWS Serverless technologies including Lambda, DynamoDB, and S3, with PostgreSQL for data-intensive applications.",
-    technologies: ["React", "Next.js", "Node.js", "Express.js", "PostgreSQL"],
+    technologies: ["React", "Next.js", "React Native", "Node.js", "Express.js", "PostgreSQL"],
     current: false,
   },
   {
     company: "Freelance Developer",
-    role: "Full-Stack Consultant",
-    period: "Jun 2024 - Present",
+    role: "Full Stack Consultant",
+    period: "Jan 2025 - Present",
     type: "Contract",
     description:
       "Providing full-stack development services to various clients, specializing in React, Next.js, Node.js, and Express applications. Expertise in AWS Serverless architecture and database management.",
-    technologies: ["React", "Next.js", "Node.js", "MongoDB"],
+    technologies: ["HTML5", "CSS3", "JS", "React", "Next.js", "Node.js", "Express.js", "MongoDB", "MySQL"],
     current: true,
   },
   {
     company: "Decentral Developers",
     role: "Frontend Developer Intern",
-    period: "Apr 2023 - Jul 2023",
+    period: "Apr 2024 - Jul 2024",
     type: "Internship",
     description:
       "Completed frontend development internship, developing responsive and user-friendly interfaces. Contributed to real-world projects using modern JavaScript frameworks and CSS methodologies.",
-    technologies: ["JavaScript", "React", "CSS", "HTML"],
+    technologies: ["HTML5", "CSS3", "Sass", "Bootstrap", "Tailwind CSS", "JavaScript", "React"],
     current: false,
   },
 ];
@@ -52,7 +52,7 @@ const Experience = () => {
 
         <div className="flex justify-center">
           <div className="text-center mb-12 lg:mb-16">
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -88,11 +88,9 @@ const Experience = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-
               className="text-lg lg:text-xl text-[#cccccc] max-w-3xl mx-auto leading-relaxed px-4"
             >
-              A timeline of my professional journey, showcasing growth from
-              internship to senior development roles.
+              A professional timeline detailing my experience as a software engineer, building production-ready systems and delivering business value through full-stack development.
             </motion.p>
           </div>
         </div>
@@ -110,9 +108,8 @@ const Experience = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
-                className={`relative flex items-center ${
-                  index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-                }`}
+                className={`relative flex items-center ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+                  }`}
               >
 
                 <div className="absolute left-2.5 lg:left-1/2 lg:transform lg:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-[#00a8e8] to-[#007ea7] rounded-full border-4 border-[#00171f] z-10">
@@ -123,9 +120,8 @@ const Experience = () => {
 
 
                 <div
-                  className={`ml-12 lg:ml-0 lg:w-1/2 ${
-                    index % 2 === 0 ? "lg:pr-12" : "lg:pl-12"
-                  }`}
+                  className={`ml-12 lg:ml-0 lg:w-1/2 ${index % 2 === 0 ? "lg:pr-12" : "lg:pl-12"
+                    }`}
                 >
                   <motion.div
                     whileHover={{ scale: 1.02 }}

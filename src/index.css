@@ -29,3 +29,187 @@ html, body {
   overflow-x: hidden;
   background-color: #00171f;
 }
+
+/* Smooth theme transition */
+html, body, section, div, p, h1, h2, h3, h4, span, button, input, textarea, a {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Light Theme Variables and Overrides */
+.light body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.light html {
+  background-color: #f8fafc;
+}
+
+/* Background overrides */
+.light .bg-\[\#00171f\] {
+  background-color: #f8fafc !important;
+}
+.light .bg-\[\#00171f\]\/80 {
+  background-color: rgba(248, 250, 252, 0.8) !important;
+}
+.light .bg-\[\#00171f\]\/95 {
+  background-color: rgba(248, 250, 252, 0.95) !important;
+}
+.light .bg-\[\#00171f\]\/50 {
+  background-color: rgba(248, 250, 252, 0.5) !important;
+}
+
+/* Card overrides */
+.light .bg-\[\#003459\] {
+  background-color: #ffffff !important;
+}
+.light .bg-\[\#003459\]\/50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+.light .bg-\[\#003459\]\/20 {
+  background-color: rgba(0, 168, 232, 0.05) !important;
+}
+
+/* Border overrides */
+.light .border-\[\#003459\] {
+  border-color: #e2e8f0 !important;
+}
+.light .border-\[\#003459\]\/50 {
+  border-color: rgba(226, 232, 240, 0.5) !important;
+}
+.light .border-b.border-\[\#003459\] {
+  border-color: #e2e8f0 !important;
+}
+.light .border-white {
+  border-color: #cbd5e1 !important;
+}
+.light .border-\[\#00171f\] {
+  border-color: #f8fafc !important;
+}
+
+/* Text overrides */
+.light .text-transparent {
+  color: transparent !important;
+}
+
+.light .text-\[\#ffffff\]:not(.bg-gradient-to-r *):not(button *):not(.text-white):not(.text-transparent) {
+  color: #0f172a !important;
+}
+.light .text-\[\#cccccc\]:not(.bg-gradient-to-r *):not(button *):not(.text-white):not(.text-transparent) {
+  color: #334155 !important;
+}
+.light .text-\[\#999999\]:not(.bg-gradient-to-r *):not(button *):not(.text-white):not(.text-transparent) {
+  color: #627d98 !important;
+}
+.light .text-white:not(.bg-gradient-to-r *):not(button *):not(a.bg-gradient-to-r *):not(.text-transparent) {
+  color: #0f172a !important;
+}
+.light .text-gray-200:not(.text-transparent) {
+  color: #334155 !important;
+}
+.light .text-\[\#ffffff\]:not(.text-transparent) {
+  /* Catch all header titles or inline text that should become dark */
+  color: #0f172a !important;
+}
+
+/* Specific exclusions to keep button/badge text white */
+.light .bg-gradient-to-r:not(.bg-clip-text) text-white,
+.light .bg-gradient-to-r:not(.bg-clip-text) * {
+  color: inherit !important;
+}
+.light button .text-white,
+.light button span:not(.text-transparent),
+.light button .relative.z-10:not(.text-transparent),
+.light .bg-gradient-to-r:not(.bg-clip-text) span:not(.text-transparent) {
+  color: #ffffff !important;
+}
+.light .bg-gradient-to-r:not(.bg-clip-text) {
+  color: #ffffff !important;
+}
+
+/* Inputs and Forms */
+.light input.bg-\[\#00171f\],
+.light textarea.bg-\[\#00171f\] {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+.light input.bg-\[\#00171f\]::placeholder,
+.light textarea.bg-\[\#00171f\]::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Hero Gradient Override */
+.light .from-\[\#00171f\] {
+  --tw-gradient-from: #f8fafc !important;
+  --tw-gradient-to: rgb(248 250 252 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+.light .to-\[\#00171f\] {
+  --tw-gradient-to: #f8fafc !important;
+}
+.light .from-\[\#00171f\]\/80 {
+  --tw-gradient-from: rgba(248, 250, 252, 0.8) !important;
+  --tw-gradient-to: rgb(248 250 252 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+/* Shiny & Glow Effects overrides for light mode */
+.light .shiny-effect {
+  background: radial-gradient(circle, rgba(0, 168, 232, 0.08), transparent 70%);
+}
+
+.light .bg-\[\#00a8e8\]\/10 {
+  background-color: rgba(0, 168, 232, 0.05) !important;
+}
+.light .bg-\[\#007ea7\]\/10 {
+  background-color: rgba(0, 126, 167, 0.05) !important;
+}
+
+/* Hover effects */
+.light .hover\:border-\[\#00a8e8\]\/50:hover {
+  border-color: rgba(0, 168, 232, 0.5) !important;
+}
+.light .hover\:bg-\[\#003459\]:hover {
+  background-color: #f1f5f9 !important;
+}
+.light .hover\:bg-\[\#003459\]\/30:hover {
+  background-color: rgba(0, 168, 232, 0.08) !important;
+}
+.light .hover\:text-white:hover {
+  color: #00a8e8 !important;
+}
+
+/* Mobile Nav overrides */
+.light .text-3xl.font-semibold.text-\[\#ffffff\] {
+  color: #0f172a !important;
+}
+.light .text-3xl.font-semibold.text-\[\#ffffff\]:hover {
+  color: #00a8e8 !important;
+}
+.light .md\:hidden.z-50.text-\[\#ffffff\] {
+  color: #0f172a !important;
+}
+.light .md\:hidden.z-50.text-white {
+  color: #0f172a !important;
+}
+
+/* Project Modal Overrides */
+.light .text-\[\#999999\] {
+  color: #64748b !important;
+}
+.light .hover\:text-\[\#ffffff\]:hover {
+  color: #0f172a !important;
+}
+.light .scrollbar-thumb-\[\#007ea7\]\/50 {
+  --tw-scrollbar-thumb: rgba(0, 126, 167, 0.5) !important;
+}
+.light .border-\[\#007ea7\]\/50 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Light mode background grid pattern override (Option A: Soft Dotted Grid) */
+.light .bg-\[size\:60px_60px\] {
+  background-image: radial-gradient(rgba(0, 168, 232, 0.12) 1.5px, transparent 1.5px) !important;
+  background-size: 32px 32px !important;
+}
