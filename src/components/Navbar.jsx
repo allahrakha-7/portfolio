@@ -144,7 +144,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           animate={nav ? "open" : "closed"}
           variants={menuVariants}
           // 2. FIXED: z-40 so it slides under the button/logo
-          className="fixed left-0 top-0 w-full min-h-screen bg-[#00171f]/95 backdrop-blur-lg z-40 md:hidden"
+          className="fixed left-0 top-0 w-full min-h-screen bg-[#00171f]/95 backdrop-blur-lg z-40 md:hidden overflow-y-auto"
         >
           {/* 3. FIXED: Changed layout to flex, added padding */}
           <div className="flex flex-col items-center h-full px-6 py-8">

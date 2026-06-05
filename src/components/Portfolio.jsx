@@ -139,11 +139,11 @@ const Portfolio = () => {
                 >
                   <div className="relative overflow-hidden rounded-2xl bg-[#003459] shadow-2xl border-2 border-[#003459] hover:border-[#00a8e8]/50 transition-all duration-300">
                     {project.isApp ? (
-                      <div className="flex justify-center bg-[#00171f] py-8 w-full h-[250px] sm:h-[350px] lg:h-[400px]">
+                      <div className="flex justify-center bg-[#00171f] py-6 w-full h-[380px] sm:h-[480px] lg:h-[500px]">
                         <img
                           src={project.img}
                           alt={project.title}
-                          className="h-full object-contain rounded-xl transition-transform duration-500 group-hover:scale-105"
+                          className="h-full object-contain rounded-[24px] border border-[#003459]/10 shadow-2xl transition-transform duration-500 group-hover:scale-105"
                         />
                       </div>
                     ) : (
