@@ -66,7 +66,7 @@ const ProjectModal = ({ project, onClose }) => {
               key={currentIndex}
               src={images[currentIndex]}
               alt={`${project.title} screenshot ${currentIndex + 1}`}
-              className="w-full h-[30vh] md:h-[40vh] object-contain mx-auto cursor-zoom-in hover:brightness-110 transition-all" 
+              className={`w-full ${project.isApp ? 'h-[48vh] sm:h-[55vh] md:h-[60vh]' : 'h-[30vh] md:h-[40vh]'} object-contain mx-auto cursor-zoom-in hover:brightness-110 transition-all`}
               onClick={() => setIsLightboxOpen(true)}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

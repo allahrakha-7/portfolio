@@ -60,7 +60,7 @@ const projects = [
   {
     img: "/sociosmart-1.jpeg",
     sliderImages: ["/sociosmart-1.jpeg", "/sociosmart-3.jpeg", "/sociosmart-4.jpeg", "/sociosmart-5.jpeg", "/sociosmart-6.jpeg", "/sociosmart-7.jpeg", "/sociosmart-8.jpeg", "/sociosmart-9.jpeg", "/sociosmart-10.jpeg", "/sociosmart-11.jpeg"],
-    title: "SocioMart - Society Management App",
+    title: "SocioSmart - Society Management App",
     description:
       "A comprehensive, high performance mobile society management system built with React Native and powered by a scalable Node.js backend. Engineered to streamline residential community operations, SocioMart enables secure resident authentication, maintenance request tracking, real time security alerts, visitor management, and digital billing systems in a single, intuitive mobile dashboard.",
     technologies: ["React Native", "Node.js", "Express.js", "MongoDB", "Redux Toolkit"],
