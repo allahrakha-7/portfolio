@@ -66,7 +66,11 @@ const ProjectModal = ({ project, onClose }) => {
               key={currentIndex}
               src={images[currentIndex]}
               alt={`${project.title} screenshot ${currentIndex + 1}`}
-              className={`w-full ${project.isApp ? 'h-[48vh] sm:h-[55vh] md:h-[60vh]' : 'h-[30vh] md:h-[40vh]'} object-contain mx-auto cursor-zoom-in hover:brightness-110 transition-all`}
+              className={`mx-auto cursor-zoom-in hover:brightness-110 transition-all ${
+                project.isApp
+                  ? 'h-[48vh] sm:h-[55vh] md:h-[60vh] rounded-[24px] border border-[#007ea7]/30 shadow-2xl py-3 px-1.5'
+                  : 'w-full h-[30vh] md:h-[40vh] object-contain'
+              }`}
               onClick={() => setIsLightboxOpen(true)}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -172,7 +176,11 @@ const ProjectModal = ({ project, onClose }) => {
               key={currentIndex}
               src={images[currentIndex]}
               alt={`${project.title} fullscreen screenshot ${currentIndex + 1}`}
-              className="max-w-[95vw] max-h-[85vh] md:max-h-[90vh] object-contain select-none"
+              className={`mx-auto select-none ${
+                project.isApp
+                  ? 'max-h-[82vh] rounded-[32px] border border-white/20 shadow-2xl py-4 px-2 bg-[#00171f]'
+                  : 'max-w-[95vw] max-h-[85vh] md:max-h-[90vh] object-contain'
+              }`}
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
